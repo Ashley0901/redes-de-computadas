@@ -9,7 +9,7 @@ mac = get_mac_address()
 initial_variable = 0
 
 
-next_node= 'https://1061-2806-2f0-91a0-bda0-3faa-68a8-87cf-a09.ngrok-free.app'
+next_node= 'http://localhost:5002'
 
 def send_message(variable):
     json = {
@@ -47,4 +47,4 @@ def receive_variable():
     return jsonify({"error": "Invalid data"}), 400
 
 
-app.run(port = 5000)
+app.run(port = 5002)
